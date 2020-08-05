@@ -1,0 +1,38 @@
+.project{
+    width: 400px;
+    /*height: 400px;*/
+    background-color: #f7f7f7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.icon{
+    position: relative;
+    background-color: #eeeef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*TODO*/
+    width: 200px;
+    height: 200px;
+
+}
+
+.icon a{
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+.icon a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+
+.skills_section {
+    min-height: 100vh;
+    background-color: #d4ffc0;
+}
+
+.container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.title {
+    background-color: #eeeef5;
+}
+
+.skills {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1017px) {
+    .skills {
+        justify-content: center;
+    }
+}
