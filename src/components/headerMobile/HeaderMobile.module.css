@@ -1,0 +1,41 @@
+.header_mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #17181B;
+    z-index: 10;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .header_mobile {
+        visibility: visible;
+    }
+}
+
+.header_mobile h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 50px;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.header_mobile .menu_bar{
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid #3b3c43;
+    float: right;
+}

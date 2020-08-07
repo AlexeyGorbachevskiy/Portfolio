@@ -1,0 +1,27 @@
+.portfolio_container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: #2C2D2F;
+}
+
+.container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 766px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+
+
