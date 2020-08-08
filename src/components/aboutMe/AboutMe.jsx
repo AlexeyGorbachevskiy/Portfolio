@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './AboutMe.module.css';
-import PageTitle from "../common/pageTitle/PageTitle";
+import PageTitle from "../pageTitle/PageTitle";
 
 function AboutMe() {
     return (
         <div className={style.aboutMe_container}>
             <div className={style.content_container}>
-                <PageTitle/>
+                <PageTitle title={'About Me'} icon={'lnr lnr-user'}/>
                 <div className={style.content_wrapper}>
                     <div className={style.main_content}>
                         <h3>Frontend Developer</h3>

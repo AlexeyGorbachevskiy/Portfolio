@@ -5,7 +5,7 @@ import Nav from "./components/nav/Nav";
 import {Route, Redirect} from "react-router-dom";
 import AboutMe from "./components/aboutMe/AboutMe";
 import HeaderMobile from "./components/headerMobile/HeaderMobile";
-import Resume from "./resume/Resume";
+import Resume from "./components/resume/Resume";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 

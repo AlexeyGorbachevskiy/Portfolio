@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './PageTitle.module.css';
 
-function PageTitle() {
+function PageTitle(props) {
     return (
         <div className={style.page_title_container}>
             <span className={style.icon}>
-                <i class='lnr lnr-user'/>
+                <i class={props.icon}/>
             </span>
-            <h2>About Me.</h2>
+            <h2>{props.title}.</h2>
         </div>
     )
 }
