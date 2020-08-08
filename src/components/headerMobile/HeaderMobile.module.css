@@ -15,6 +15,12 @@
     }
 }
 
+@media screen and (max-width: 370px) {
+    .header_mobile h2{
+       visibility: hidden;
+    }
+}
+
 .header_mobile h2{
     position: absolute;
     left: 50%;

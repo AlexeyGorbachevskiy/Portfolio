@@ -12,19 +12,24 @@ import Contact from "./components/contact/Contact";
 
 function App() {
 
-    const [isClickedOnMenu, setClickedOnMenu] = useState(false);
+    const [isMenuDisplayed, setMenuDisplayed] = useState(false);
+
+
+
+
 
     return (
         <div className="App">
-            <HeaderMobile isClickedOnMenu={isClickedOnMenu}
-                          setClickedOnMenu={setClickedOnMenu}
+            <HeaderMobile isMenuDisplayed={isMenuDisplayed}
+                          setMenuDisplayed={setMenuDisplayed}
             />
-            <Nav isClickedOnMenu={isClickedOnMenu}/>
+            <Nav isMenuDisplayed={isMenuDisplayed} />
             <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
+            <Route exact path='/Portfolio' render={() => <Redirect to={'/home'}/>}/>
             <Route path='/home' render={() => <Main/>}/>
             <Route path='/aboutMe' render={() => <AboutMe/>}/>
             <Route path='/resume' render={() => <Resume/>}/>
-            <Route path='/portfolio' render={() => <Portfolio/>}/>
+            <Route path='/projects' render={() => <Portfolio/>}/>
             <Route path='/contact' render={() => <Contact/>}/>
         </div>
     );

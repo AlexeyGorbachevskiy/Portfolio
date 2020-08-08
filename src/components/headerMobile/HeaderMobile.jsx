@@ -4,10 +4,10 @@ import style from './HeaderMobile.module.css'
 function HeaderMobile(props) {
 
     const onMenuBarClick = () => {
-        if (props.isClickedOnMenu) {
-            props.setClickedOnMenu(false)
+        if (props.isMenuDisplayed) {
+            props.setMenuDisplayed(false)
         } else {
-            props.setClickedOnMenu(true)
+            props.setMenuDisplayed(true)
         }
     }
 

@@ -12,10 +12,10 @@ function Nav(props) {
 
     return (
 
-        <div className={style.nav_container} style={props.isClickedOnMenu ? navContainerStyle : {}}>
+        <div className={style.nav_container} style={props.isMenuDisplayed ? navContainerStyle : {}}>
 
             <div className={style.img_wrapper}>
-                <h2>Alexey Gorbachevskiy</h2>
+                <h2>Alexey</h2>
                 <img src={process.env.PUBLIC_URL + '/images/profile_img.jpg'} alt="profile-img"/>
             </div>
             <nav className={style.nav_menu}>
@@ -36,7 +36,7 @@ function Nav(props) {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/portfolio' activeClassName={style.activeLink} className={style.link}>
+                        <NavLink to='/projects' activeClassName={style.activeLink} className={style.link}>
                             <span><i className="lnr lnr-briefcase"/></span> PORTFOLIO
                         </NavLink>
                     </li>
