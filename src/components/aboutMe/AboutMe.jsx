@@ -10,18 +10,19 @@ function AboutMe() {
                 <div className={style.content_wrapper}>
                     <div className={style.main_content}>
                         <h3>Frontend Developer</h3>
-                        <p>Dolor reprehenderit aut repudiandae maiores recusandae.
-                            Consequatur dolor nisi labore commodi ipsa?
-                            Excepturi velit laboriosam at voluptatibus cupiditate est
-                            vel. Dolorem praesentium itaque fugiat placeat quas
-                            consequatur? Obcaecati natus rerum
+                        <p>
+                            Hello, my name is Alexey Gorbachevskiy. I graduated
+                            from Belarusian State University of Informatics and
+                            Radioelectronics.
+                            I am a Frontend Developer and I have expertise and skills in range of IT.
                         </p>
-                        <p>Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium?
-                            Illo architecto aliquam velit illo magnam neque perferendis sint
-                            Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex
-                            Quidem officia deleniti accusamus obcaecati dolores.
-                            Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?
+                        <p>
+                            I attended front-end courses of IT-incubator. There I studied predominantly React/Redux
+                            libraries
+                            and not only (see Resume page).
+                            Also, I participated in development of different applications (see Portfolio page).
                         </p>
+                        <p>Thank you for visiting.</p>
                     </div>
 
                     <div className={style.personal_information}>
@@ -60,7 +61,7 @@ function AboutMe() {
 
                 </div>
                 <div className={style.signature}>
-                    <img src={process.env.PUBLIC_URL+'/images/signature.png'} alt="Some signature"/>
+                    <img src={process.env.PUBLIC_URL + '/images/signature.png'} alt="Some signature"/>
                 </div>
             </div>
         </div>

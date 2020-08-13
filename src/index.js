@@ -5,7 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import {fab, faGitSquare, faJs, faQuora, faReact} from '@fortawesome/free-brands-svg-icons'
+import {library} from "@fortawesome/fontawesome-svg-core";
+import {faCode, faLanguage} from "@fortawesome/free-solid-svg-icons";
 
+
+library.add(fab, faReact, faCode, faJs, faLanguage,faGitSquare, faQuora)
 
 ReactDOM.render(
     <React.StrictMode>

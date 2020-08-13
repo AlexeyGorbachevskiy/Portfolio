@@ -107,7 +107,7 @@ h3 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 .fields_wrapper {
@@ -269,7 +269,7 @@ h3 {
 
 .contact_footer i {
     color: #00A3E1;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 900;
 }
 
