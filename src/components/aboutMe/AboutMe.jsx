@@ -8,6 +8,7 @@ function AboutMe() {
             <div className={style.content_container}>
                 <PageTitle title={'About Me'} icon={'lnr lnr-user'}/>
                 <div className={style.content_wrapper}>
+
                     <div className={style.main_content}>
                         <h3>Frontend Developer</h3>
                         <p>
@@ -47,6 +48,10 @@ function AboutMe() {
                             <li>
                                 <span className={style.title}>Email:</span>
                                 <span className={style.value}>alexeygorbachevskiyy@gmail.com</span>
+                            </li>
+                            <li>
+                                <span className={style.title}>GitHub:</span>
+                                <span className={style.value}>AlexeyGorbachevskiy</span>
                             </li>
                             <li>
                                 <span className={style.title}>Phone:</span>

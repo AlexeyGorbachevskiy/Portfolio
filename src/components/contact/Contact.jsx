@@ -53,7 +53,11 @@ function Contact() {
                                     <textarea placeholder={'Message'} type="text" id={style.message}/>
                                 </div>
 
-                                <Button id={style.send_btn} variant="outlined" color="primary">Send Message</Button>
+                                <Button type={'submit'}
+                                        id={style.send_btn}
+                                        variant="outlined"
+                                        color="primary">
+                                    Send Message</Button>
                             </div>
 
                         </form>
