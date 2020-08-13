@@ -8,6 +8,7 @@ import HeaderMobile from "./components/headerMobile/HeaderMobile";
 import Resume from "./components/resume/Resume";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
+import ThemeToggle from "./components/themeToggle/ThemeToggle";
 
 
 function App() {
@@ -15,15 +16,13 @@ function App() {
     const [isMenuDisplayed, setMenuDisplayed] = useState(false);
 
 
-
-
-
     return (
         <div className="App">
             <HeaderMobile isMenuDisplayed={isMenuDisplayed}
                           setMenuDisplayed={setMenuDisplayed}
             />
-            <Nav isMenuDisplayed={isMenuDisplayed} />
+            <ThemeToggle/>
+            <Nav isMenuDisplayed={isMenuDisplayed}/>
             <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
             <Route exact path='/Portfolio' render={() => <Redirect to={'/home'}/>}/>
             <Route path='/home' render={() => <Main/>}/>
