@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61e58b57c89260c9fcd6d16646778469",
+    "revision": "a7d7776f546f92f546f7c43dee0da948",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "c669f2930c01600e4818",
+    "revision": "0caed4d034eeadb14943",
     "url": "/Portfolio/static/css/2.c6f1d87e.chunk.css"
   },
   {
-    "revision": "ccabf9349198a3056049",
-    "url": "/Portfolio/static/css/main.83581d67.chunk.css"
+    "revision": "f93cea8ba9ba8d9f31e1",
+    "url": "/Portfolio/static/css/main.e4383e15.chunk.css"
   },
   {
-    "revision": "c669f2930c01600e4818",
-    "url": "/Portfolio/static/js/2.35c334ce.chunk.js"
+    "revision": "0caed4d034eeadb14943",
+    "url": "/Portfolio/static/js/2.580260c9.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Portfolio/static/js/2.35c334ce.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.580260c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ccabf9349198a3056049",
-    "url": "/Portfolio/static/js/main.ad6d716c.chunk.js"
+    "revision": "f93cea8ba9ba8d9f31e1",
+    "url": "/Portfolio/static/js/main.af1c02b6.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
     "url": "/Portfolio/static/js/runtime-main.e440ee5a.js"
+  },
+  {
+    "revision": "e3dd14c6f3301371b7007fee12b36acd",
+    "url": "/Portfolio/static/media/chatter.e3dd14c6.png"
+  },
+  {
+    "revision": "ed988f85981326ce32c13fb91210b7e6",
+    "url": "/Portfolio/static/media/counter.ed988f85.png"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -48,7 +56,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
+    "revision": "f40cc8626f2eac57ba0c9e745a3a8a04",
+    "url": "/Portfolio/static/media/react_tasks.f40cc862.png"
+  },
+  {
     "revision": "0f784d717f43ca13e0c5a62ed8601082",
     "url": "/Portfolio/static/media/road.0f784d71.jpg"
+  },
+  {
+    "revision": "0e8ba557f97d12b8f6671c6d4addb271",
+    "url": "/Portfolio/static/media/todolist.0e8ba557.png"
+  },
+  {
+    "revision": "0b7a2f72accd7e42d5f17d11bb72a7bc",
+    "url": "/Portfolio/static/media/weather_informer.0b7a2f72.png"
   }
 ]);

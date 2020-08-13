@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.83581d67.chunk.css",
-    "main.js": "/Portfolio/static/js/main.ad6d716c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.ad6d716c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.e4383e15.chunk.css",
+    "main.js": "/Portfolio/static/js/main.af1c02b6.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.af1c02b6.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/css/2.c6f1d87e.chunk.css": "/Portfolio/static/css/2.c6f1d87e.chunk.css",
-    "static/js/2.35c334ce.chunk.js": "/Portfolio/static/js/2.35c334ce.chunk.js",
-    "static/js/2.35c334ce.chunk.js.map": "/Portfolio/static/js/2.35c334ce.chunk.js.map",
+    "static/js/2.580260c9.chunk.js": "/Portfolio/static/js/2.580260c9.chunk.js",
+    "static/js/2.580260c9.chunk.js.map": "/Portfolio/static/js/2.580260c9.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.c2dc91421634b39747f6d2ff42e071ea.js": "/Portfolio/precache-manifest.c2dc91421634b39747f6d2ff42e071ea.js",
+    "precache-manifest.765c7f166a3c7646a482e3438a5de0d0.js": "/Portfolio/precache-manifest.765c7f166a3c7646a482e3438a5de0d0.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.c6f1d87e.chunk.css.map": "/Portfolio/static/css/2.c6f1d87e.chunk.css.map",
-    "static/css/main.83581d67.chunk.css.map": "/Portfolio/static/css/main.83581d67.chunk.css.map",
-    "static/js/2.35c334ce.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.35c334ce.chunk.js.LICENSE.txt",
+    "static/css/main.e4383e15.chunk.css.map": "/Portfolio/static/css/main.e4383e15.chunk.css.map",
+    "static/js/2.580260c9.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.580260c9.chunk.js.LICENSE.txt",
+    "static/media/chatter.png": "/Portfolio/static/media/chatter.e3dd14c6.png",
+    "static/media/counter.png": "/Portfolio/static/media/counter.ed988f85.png",
     "static/media/font-awesome.min.css": "/Portfolio/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/Main.module.css": "/Portfolio/static/media/road.0f784d71.jpg"
+    "static/media/react_tasks.png": "/Portfolio/static/media/react_tasks.f40cc862.png",
+    "static/media/Main.module.css": "/Portfolio/static/media/road.0f784d71.jpg",
+    "static/media/todolist.png": "/Portfolio/static/media/todolist.0e8ba557.png",
+    "static/media/weather_informer.png": "/Portfolio/static/media/weather_informer.0b7a2f72.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/css/2.c6f1d87e.chunk.css",
-    "static/js/2.35c334ce.chunk.js",
-    "static/css/main.83581d67.chunk.css",
-    "static/js/main.ad6d716c.chunk.js"
+    "static/js/2.580260c9.chunk.js",
+    "static/css/main.e4383e15.chunk.css",
+    "static/js/main.af1c02b6.chunk.js"
   ]
 }
