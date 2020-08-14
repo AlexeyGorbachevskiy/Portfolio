@@ -1,5 +1,6 @@
 import React from 'react';
-import style from './Main.module.css';
+import style from './Main.module.scss';
+import ReactTypingEffect from 'react-typing-effect'
 
 function Main() {
 
@@ -16,7 +17,20 @@ function Main() {
 
             <div className={style.content}>
                 <h1>Alexey <span>Gorbachevskiy</span></h1>
-                <p><span>I am a</span> <b>Frontend Developer</b></p>
+
+                <p><span>I am a </span>
+                    <b>
+                        {/*react-typing-effect library*/}
+                        <ReactTypingEffect
+                            className={style.animated_text}
+                            eraseDelay={2000}
+                            typingDelay={200}
+                            speed={20}
+                            text={['Frontend Developer', 'React Developer', 'JavaScript Developer']}
+                        />
+                    </b>
+
+                </p>
             </div>
 
         </div>

@@ -7,10 +7,11 @@ import {BrowserRouter, HashRouter} from "react-router-dom";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import {fab, faGitSquare, faJs, faQuora, faReact} from '@fortawesome/free-brands-svg-icons'
 import {library} from "@fortawesome/fontawesome-svg-core";
-import {faCode, faLanguage} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faCode, faLanguage, fas} from "@fortawesome/free-solid-svg-icons";
 
 
-library.add(fab, faReact, faCode, faJs, faLanguage,faGitSquare, faQuora)
+library.add(fab, faReact, faCode, faJs, faLanguage, faGitSquare, faQuora);
+library.add(fas, faBars);
 
 ReactDOM.render(
     <React.StrictMode>

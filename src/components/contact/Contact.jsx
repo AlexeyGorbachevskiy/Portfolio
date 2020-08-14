@@ -1,26 +1,11 @@
 import React from 'react';
-import style from './Contact.module.css';
-import PageTitle from "../pageTitle/PageTitle";
+import style from './Contact.module.scss';
+import PageTitle from "../../common/pageTitle/PageTitle";
 import Button from "@material-ui/core/Button";
-import withStyles from "@material-ui/core/styles/withStyles";
-import TextField from "@material-ui/core/TextField";
+
 
 
 function Contact() {
-    // const CustomInput = withStyles({
-    //     root: {
-    //
-    //         '& .MuiOutlinedInput-root': {
-    //
-    //             '&.Mui-focused fieldset': {
-    //                 borderColor: 'white'
-    //             },
-    //             '&:hover fieldset': {
-    //                 borderColor: 'gray'
-    //             },
-    //         },
-    //     },
-    // })(TextField);
 
     return (
         <div className={style.contact_container}>

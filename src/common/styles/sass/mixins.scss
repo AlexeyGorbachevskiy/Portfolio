@@ -1,0 +1,10 @@
+
+
+
+@mixin text($fontSize) {
+  font-family: "Playfair Display", serif;
+  font-size: $fontSize;
+}
+
+//@import './'
+//@include text(16px)

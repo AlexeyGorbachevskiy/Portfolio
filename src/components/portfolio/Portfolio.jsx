@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Portfolio.module.css';
-import PageTitle from "../pageTitle/PageTitle";
+import style from './Portfolio.module.scss';
+import PageTitle from "../../common/pageTitle/PageTitle";
 import Project from "./project/Project";
 import chatter from '../../assets/img/projects/chatter.png'
 import todolist from '../../assets/img/projects/todolist.png'
@@ -41,12 +41,12 @@ function Portfolio() {
             projectName: 'Weather Informer',
             link: '#'
         },
-        {
-            imageStyle: tasksStyle,
-            description: 'some text gfgfghfghfhf fgf h fg',
-            projectName: 'React Tasks',
-            link: 'https://alexeygorbachevskiy.github.io/React_Tasks/'
-        },
+        // {
+        //     imageStyle: tasksStyle,
+        //     description: 'some text gfgfghfghfhf fgf h fg',
+        //     projectName: 'React Tasks',
+        //     link: 'https://alexeygorbachevskiy.github.io/React_Tasks/'
+        // },
     ];
 
     const project = projects.map(projectsElement => {
@@ -64,8 +64,15 @@ function Portfolio() {
         <div className={style.portfolio_container}>
             <div className={style.content_container}>
                 <PageTitle title={'Portfolio'} icon={'lnr lnr-briefcase'}/>
+
+                <div className={style.subheader}>
+                    <h3>My Projects</h3>
+                </div>
+
                 <div className={style.main_wrapper}>
+
                     {project}
+
                 </div>
             </div>
         </div>

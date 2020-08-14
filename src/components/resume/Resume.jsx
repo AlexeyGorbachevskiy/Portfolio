@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Resume.module.css';
-import PageTitle from "../pageTitle/PageTitle";
+import style from './Resume.module.scss';
+import PageTitle from "../../common/pageTitle/PageTitle";
 import Skill from "./Skill/Skill";
 
 

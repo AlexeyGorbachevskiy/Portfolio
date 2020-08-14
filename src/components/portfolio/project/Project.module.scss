@@ -1,0 +1,112 @@
+
+@import '../../../common/styles/sass/variables';
+
+.project {
+  display: grid;
+  grid-template:
+            "image" 2.5fr
+            "text" 1fr/ 1fr;
+
+
+  /*height: 350px;*/
+  /*width: 375px;*/
+
+  height: 350px;
+  width: 400px;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  border: 1px solid #222324;
+
+  .tilt {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project_img_wrapper {
+      position: relative;
+
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /*background-color: white;*/
+      background-size: cover !important;
+      background-position: center !important;
+      /*border: 1px #aaa solid;*/
+      z-index: 1;
+
+      &:before {
+        position: absolute;
+        content: '';
+        background-color: black;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .3;
+      }
+
+      .link_wrapper {
+        position: relative;
+        z-index: 2;
+
+        min-height: 50px;
+        min-width: 150px;
+        padding: 0 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .6);
+
+        visibility: hidden;
+
+        @media screen and (max-width: 767px) {
+          visibility: visible;
+          /*background-color: #2C2D2F;*/
+        }
+
+        &:hover {
+          /*background-color: #17181b;*/
+          background-color: #2C2D2F;
+        }
+
+        & a {
+          cursor: pointer;
+          color: $mainColor;
+          font-size: 30px;
+          font-weight: 700;
+          font-family: "Playfair Display", serif;
+          /*&:hover {*/
+          /*    text-decoration: underline !important;*/
+          /*}*/
+        }
+      }
+
+
+    }
+
+  }
+
+  .project_description {
+    grid-area: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #17181b;*/
+    background-color: #2C2D2F;
+
+    border-top: 1px solid #222324;
+  }
+
+
+}
+
+
+
+

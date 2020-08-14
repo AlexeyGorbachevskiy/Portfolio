@@ -9,11 +9,29 @@ import Resume from "./components/resume/Resume";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import ThemeToggle from "./components/themeToggle/ThemeToggle";
-
+import mainColor from './common/styles/sass/variables.scss'
 
 function App() {
 
     const [isMenuDisplayed, setMenuDisplayed] = useState(false);
+
+    //Color from scss variables
+    const style = {
+        color: 'var(--mainColor)',
+    };
+
+
+    // let [mainColor, setMainColor] = useState(style.color);
+    // blue, red, green, orange, pink, purple
+
+
+    const onChangeMainColor = (e) => {
+        // const color=window.getComputedStyle(e.target).backgroundColor;
+        // e.target.style.backgroundColor='green'
+
+
+        console.log(mainColor)
+    }
 
 
     return (
@@ -21,7 +39,7 @@ function App() {
             <HeaderMobile isMenuDisplayed={isMenuDisplayed}
                           setMenuDisplayed={setMenuDisplayed}
             />
-            <ThemeToggle/>
+            <ThemeToggle onChangeMainColor={onChangeMainColor}/>
             <Nav isMenuDisplayed={isMenuDisplayed}/>
             <Route exact path='/' render={() => <Redirect to={'/home'}/>}/>
             <Route exact path='/Portfolio' render={() => <Redirect to={'/home'}/>}/>

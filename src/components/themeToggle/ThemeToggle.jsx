@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import style from './ThemeToggle.module.css'
+import style from './ThemeToggle.module.scss'
+
 
 function ThemeToggle(props) {
 
@@ -16,6 +17,10 @@ function ThemeToggle(props) {
 
             setSettingsMenuDisplayed(false);
         }
+    }
+
+    const onChangeMainColor=(e)=>{
+        props.onChangeMainColor(e)
     }
 
     return (
@@ -35,7 +40,7 @@ function ThemeToggle(props) {
             <div className={style.theme_menu}>
                 <div className={style.theme_color}>
                     <h4>Colors</h4>
-                    <ul>
+                    <ul onClick={onChangeMainColor}>
                         <li>
                            <span className={style.blue}/>
                         </li>

@@ -1,28 +1,36 @@
 import React, {useState} from 'react';
-import style from './Project.module.css';
+import style from './Project.module.scss';
+import Tilt from 'react-tilt';
 
 function Project(props) {
-    const [isLinkDisplayed,setLinkDisplayed] = useState(false);
+    const [isLinkDisplayed, setLinkDisplayed] = useState(false);
 
-    let linkStyle={};
-    if(isLinkDisplayed){
-        linkStyle={'visibility':'visible'}
+    let linkStyle = {};
+    if (isLinkDisplayed) {
+        linkStyle = {'visibility': 'visible'}
     }
 
 
     return (
         <div className={style.project}>
-            <div className={style.project_img_wrapper} style={props.imageStyle}
-                 onMouseOver={()=>setLinkDisplayed(true)}
-                 onMouseOut={()=>setLinkDisplayed(false)}
-            >
 
-                <div  className={style.link_wrapper}
-                      style={linkStyle}
+            {/*react-tilt library*/}
+            <Tilt className={style.tilt} options={{max: 25}}>
+
+                <div className={style.project_img_wrapper} style={props.imageStyle}
+                     onMouseOver={() => setLinkDisplayed(true)}
+                     onMouseOut={() => setLinkDisplayed(false)}
                 >
-                    <a target="_blank" href={props.link}>{props.projectName}</a>
+
+                    <div className={style.link_wrapper}
+                         style={linkStyle}
+                    >
+                        <a target="_blank" href={props.link}>{props.projectName}</a>
+                    </div>
                 </div>
-            </div>
+
+            </Tilt>
+
 
             <div className={style.project_description}>
                 {props.description}

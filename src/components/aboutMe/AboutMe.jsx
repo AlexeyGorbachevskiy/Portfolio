@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './AboutMe.module.css';
-import PageTitle from "../pageTitle/PageTitle";
+import style from './AboutMe.module.scss';
+import PageTitle from "../../common/pageTitle/PageTitle";
 
 function AboutMe() {
     return (
