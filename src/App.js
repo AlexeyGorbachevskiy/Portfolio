@@ -22,7 +22,9 @@ function App() {
 
 
     const onChangeMainColor = (e) => {
-        setMainColor(window.getComputedStyle(e.target).backgroundColor);
+        if(e.target.tagName==='SPAN'){
+            setMainColor(window.getComputedStyle(e.target).backgroundColor);
+        }
     }
 
 
