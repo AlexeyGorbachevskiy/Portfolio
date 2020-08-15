@@ -19,8 +19,12 @@ function ThemeToggle(props) {
         }
     }
 
-    const onChangeMainColor=(e)=>{
+    const onChangeMainColor = (e) => {
         props.onChangeMainColor(e)
+    }
+
+    const onSelectPageAnimation = (e) => {
+        props.onSelectPageAnimation(e);
     }
 
     return (
@@ -38,11 +42,36 @@ function ThemeToggle(props) {
             </div>
 
             <div className={style.theme_menu}>
+
+                <div className={style.page_transitions}>
+                    <h4>Page Animation</h4>
+                    <select onChange={onSelectPageAnimation}
+                            value={props.selectedValue}
+                            name="page_animation"
+                            id={style.page_animation_select}
+                    >
+                        <option>Choose</option>
+                        <option value="0">Random</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                </div>
+
+
                 <div className={style.theme_color}>
                     <h4>Colors</h4>
                     <ul onClick={onChangeMainColor}>
                         <li>
-                           <span className={style.blue}/>
+                            <span className={style.blue}/>
                         </li>
                         <li>
                             <span className={style.red}/>

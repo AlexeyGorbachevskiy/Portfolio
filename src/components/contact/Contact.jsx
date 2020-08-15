@@ -25,7 +25,7 @@ function Contact(props) {
 
                         <div className={style.subheader}>
                             {/*<h3 style={{'border-bottom-color': props.mainColor}}>Let's Talk</h3>*/}
-                            <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Skills</SubheaderH3>
+                            <SubheaderH3 mainColor={props.mainColor} className={style.h3}>Let's Talk</SubheaderH3>
                         </div>
 
 

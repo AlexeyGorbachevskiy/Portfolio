@@ -20,27 +20,27 @@ function Portfolio(props) {
     const projects = [
         {
             imageStyle: chatterStyle,
-            description: 'some text gfgfghfghfhf fgf h fg',
+            description: 'Typescript, Hooks, Axios, Class/Func components, HOC(s), Redux-Form, React-Redux, Context API',
             projectName: 'Social Network',
             link: 'https://alexeygorbachevskiy.github.io/Chatter/'
         },
         {
             imageStyle: todoListStyle,
-            description: 'some text gfgfghfghfhf fgf h fg',
+            description: 'Typescript, Hooks, Jest Tdd, Redux, StoryBook, Material UI ',
             projectName: 'TodoList',
-            link: '#'
+            link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
         },
         {
             imageStyle: counterStyle,
-            description: 'some text gfgfghfghfhf fgf h fg',
+            description: 'Typescript, Hooks, Function Components, CSS Modules',
             projectName: 'Counter',
-            link: '#'
+            link: 'https://alexeygorbachevskiy.github.io/Counter/'
         },
         {
             imageStyle: weatherStyle,
-            description: 'some text gfgfghfghfhf fgf h fg',
+            description: 'Javascript, Hooks, Fetch API, Function Components, CSS Modules',
             projectName: 'Weather Informer',
-            link: '#'
+            link: 'https://alexeygorbachevskiy.github.io/Weather_Informer/'
         },
         // {
         //     imageStyle: tasksStyle,
@@ -77,7 +77,7 @@ function Portfolio(props) {
 
                 <div className={style.subheader}>
                     {/*<h3 style={{'border-bottom-color': props.mainColor}}>My Projects</h3>*/}
-                    <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Skills</SubheaderH3>
+                    <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Projects</SubheaderH3>
                 </div>
 
                 <div className={style.main_wrapper}>
