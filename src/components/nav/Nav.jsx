@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import style from './Nav.module.scss';
 import {NavLink} from "react-router-dom";
-
+import styled from 'styled-components';
 
 function Nav(props) {
     const navContainerStyle = {
@@ -9,13 +9,19 @@ function Nav(props) {
         transition: 'all .3s ease-in-out',
     }
 
+    const ImageWrapperHeader = styled.div`
+        &::before {
+            background: ${props=>props.mainColor};       
+        }
+    `
 
     return (
 
         <div className={style.nav_container} style={props.isMenuDisplayed ? navContainerStyle : {}}>
 
             <div className={style.img_wrapper}>
-                <h2>Alexey</h2>
+                {/*<h2>Alexey</h2>*/}
+                <ImageWrapperHeader mainColor={props.mainColor} className={style.header}>Alexey</ImageWrapperHeader>
                 <img src={process.env.PUBLIC_URL + '/images/profile_img.jpg'} alt="profile-img"/>
             </div>
             <nav className={style.nav_menu}>

@@ -4,16 +4,20 @@
 
 $mainColor: #00A3E1;
 
-//:root {
-//  --mainColor: #{$mainColor};
-//}
-
 :export {
   mainColor: $mainColor;
 }
+
+
 
 //@import '../../common/styles/sass/variables';
 
 //$backgroundColor: #000;
 //$textColor: #fff;
 //$titleFontSize: 22px;
+
+
+//:root {
+//  --mainColor: #{$mainColor};
+//}
+

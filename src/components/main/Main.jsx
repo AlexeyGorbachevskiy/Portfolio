@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Main.module.scss';
 import ReactTypingEffect from 'react-typing-effect'
 
-function Main() {
+function Main(props) {
 
 
     return (
@@ -16,12 +16,13 @@ function Main() {
             </div>
 
             <div className={style.content}>
-                <h1>Alexey <span>Gorbachevskiy</span></h1>
+                <h1>Alexey <span style={{'color':props.mainColor}}>Gorbachevskiy</span></h1>
 
                 <p><span>I am a </span>
                     <b>
                         {/*react-typing-effect library*/}
                         <ReactTypingEffect
+                            style={{'border-bottom-color':props.mainColor}}
                             className={style.animated_text}
                             eraseDelay={2000}
                             typingDelay={200}

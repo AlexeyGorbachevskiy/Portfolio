@@ -5,9 +5,9 @@ function PageTitle(props) {
     return (
         <div className={style.page_title_container}>
             <span className={style.icon}>
-                <i className={props.icon}/>
+                <i style={{'color': props.mainColor}} className={props.icon}/>
             </span>
-            <h2>{props.title}.</h2>
+            <h2 style={{'color': props.mainColor}}>{props.title}.</h2>
         </div>
     )
 }

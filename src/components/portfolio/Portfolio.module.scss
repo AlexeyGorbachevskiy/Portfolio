@@ -34,7 +34,7 @@
       /*margin-bottom: 50px;*/
       text-align: center;
 
-      & h3 {
+      & .h3 {
         display: inline-block;
         font-size: 24px;
         font-weight: 600;
@@ -43,7 +43,7 @@
         position: relative;
         text-transform: uppercase;
         padding: 5px 10px;
-        border-bottom: 2px solid $mainColor;
+        //border-bottom: 2px solid $mainColor;
         font-family: "Playfair Display", serif;
 
         &:before {
@@ -60,7 +60,7 @@
           width: 2px;
           height: 5px;
           bottom: 0;
-          background-color: $mainColor;
+          //background-color: $mainColor;
         }
 
       }

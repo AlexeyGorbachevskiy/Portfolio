@@ -2,11 +2,11 @@ import React from 'react';
 import style from './AboutMe.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 
-function AboutMe() {
+function AboutMe(props) {
     return (
         <div className={style.aboutMe_container}>
             <div className={style.content_container}>
-                <PageTitle title={'About Me'} icon={'lnr lnr-user'}/>
+                <PageTitle mainColor={props.mainColor} title={'About Me'} icon={'lnr lnr-user'}/>
                 <div className={style.content_wrapper}>
 
                     <div className={style.main_content}>
@@ -30,35 +30,35 @@ function AboutMe() {
                         <h3>Personal Information</h3>
                         <ul>
                             <li>
-                                <span className={style.title}>Name:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Name:</span>
                                 <span className={style.value}>Alexey Gorbachevskiy</span>
                             </li>
                             <li>
-                                <span className={style.title}>Age:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Age:</span>
                                 <span className={style.value}>23</span>
                             </li>
                             <li>
-                                <span className={style.title}>Residence:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Residence:</span>
                                 <span className={style.value}>Minsk, Belarus</span>
                             </li>
                             <li>
-                                <span className={style.title}>Address:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Address:</span>
                                 <span className={style.value}>Oops</span>
                             </li>
                             <li>
-                                <span className={style.title}>Email:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Email:</span>
                                 <span className={style.value}>alexeygorbachevskiyy@gmail.com</span>
                             </li>
                             <li>
-                                <span className={style.title}>GitHub:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>GitHub:</span>
                                 <span className={style.value}>AlexeyGorbachevskiy</span>
                             </li>
                             <li>
-                                <span className={style.title}>Phone:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Phone:</span>
                                 <span className={style.value}>+375 (29) 636-17-79</span>
                             </li>
                             <li>
-                                <span className={style.title}>Job:</span>
+                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Job:</span>
                                 <span className={style.value}>Available</span>
                             </li>
                         </ul>

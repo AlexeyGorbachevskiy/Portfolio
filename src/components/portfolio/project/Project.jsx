@@ -25,7 +25,7 @@ function Project(props) {
                     <div className={style.link_wrapper}
                          style={linkStyle}
                     >
-                        <a target="_blank" href={props.link}>{props.projectName}</a>
+                        <a style={{'color': props.mainColor}} target="_blank" href={props.link}>{props.projectName}</a>
                     </div>
                 </div>
 

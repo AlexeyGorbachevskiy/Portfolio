@@ -37,7 +37,7 @@
   .img_wrapper {
     position: relative;
     /*background-color: #99d0fb;*/
-    & h2 {
+    & .header {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -57,7 +57,7 @@
       }
 
       &::before {
-        background-color: $mainColor;
+        //background-color: $mainColor;
         box-sizing: border-box;
         content: "";
         position: absolute;

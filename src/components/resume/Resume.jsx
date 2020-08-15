@@ -2,9 +2,10 @@ import React from 'react';
 import style from './Resume.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Skill from "./Skill/Skill";
+import styled from "styled-components";
 
 
-function Resume() {
+function Resume(props) {
 
     const skills = [
         {
@@ -23,24 +24,35 @@ function Resume() {
 
     const skill = skills.map(skillElement => {
         return (
-            <Skill icon={skillElement.icon}
+            <Skill mainColor={props.mainColor}
+                   icon={skillElement.icon}
                    icon_title={skillElement.iconTitle}
                    icon_text={skillElement.iconText}
             />
         )
     })
 
+
+    const SubheaderH3 = styled.div`
+        border-bottom:  2px solid ${props => props.mainColor};
+        
+        &::before, &::after {
+            background: ${props => props.mainColor};       
+        }
+    `
+
     return (
         <div className={style.resume_container}>
             <div className={style.content_container}>
-                <PageTitle title={'My Resume'} icon={'lnr lnr-license'}/>
+                <PageTitle mainColor={props.mainColor} title={'My Resume'} icon={'lnr lnr-license'}/>
 
                 <div className={style.main_wrapper}>
 
                     <div className={style.content_wrapper}>
 
                         <div className={style.subheader}>
-                            <h3>My Skills</h3>
+                            {/*<h3 style={{'border-bottom-color': props.mainColor}}>My Skills</h3>*/}
+                            <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Skills</SubheaderH3>
                         </div>
 
                         <div className={style.content}>
