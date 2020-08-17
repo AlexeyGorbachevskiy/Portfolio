@@ -3,6 +3,7 @@ import style from './Resume.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Skill from "./Skill/Skill";
 import styled from "styled-components";
+import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
 
 function Resume(props) {
@@ -13,7 +14,7 @@ function Resume(props) {
             iconTitle: 'Javascript & Typescript',
             iconText: 'Types, ES6, Scope, Promises, Event Loop'
         },
-        {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, ContextAPI, React-Redux, Thunks, HOC'},
+        {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC'},
         {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, CSS Modules, Sass/Scss.'},
 
         {icon: ['fa', 'language'], iconTitle: 'English', iconText: 'Intermediate (B1) level'},
@@ -33,13 +34,6 @@ function Resume(props) {
     })
 
 
-    const SubheaderH3 = styled.div`
-        border-bottom:  2px solid ${props => props.mainColor};
-        
-        &::before, &::after {
-            background: ${props => props.mainColor};       
-        }
-    `
 
     return (
         <div className={style.resume_container}>
@@ -50,10 +44,7 @@ function Resume(props) {
 
                     <div className={style.content_wrapper}>
 
-                        <div className={style.subheader}>
-                            {/*<h3 style={{'border-bottom-color': props.mainColor}}>My Skills</h3>*/}
-                            <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Skills</SubheaderH3>
-                        </div>
+                        <PageSubTitle subTitle={'My Skills'} mainColor={props.mainColor}/>
 
                         <div className={style.content}>
                             {skill}

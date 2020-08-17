@@ -43,7 +43,7 @@ function App() {
         switch (e.target.value) {
 
             case '1': {
-                setAnimationValue('moveToLeftFromRight')
+                setAnimationValue('fall')
                 break;
             }
             case '2': {
@@ -51,7 +51,7 @@ function App() {
                 break;
             }
             case '3': {
-                setAnimationValue('cubeToRight')
+                setAnimationValue('moveToLeftFromRight')
                 break;
             }
             case '4': {
@@ -59,7 +59,7 @@ function App() {
                 break;
             }
             case '5': {
-                setAnimationValue('fall')
+                setAnimationValue('cubeToRight')
                 break;
             }
             case '6': {

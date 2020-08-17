@@ -3,17 +3,11 @@ import style from './Contact.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
+import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
 
 function Contact(props) {
 
-    const SubheaderH3 = styled.div`
-        border-bottom:  2px solid ${props => props.mainColor};
-        
-        &::before, &::after {
-            background: ${props => props.mainColor};       
-        }
-    `
 
 
     return (
@@ -23,10 +17,8 @@ function Contact(props) {
                 <div className={style.main_wrapper}>
                     <div className={style.form_wrapper}>
 
-                        <div className={style.subheader}>
-                            {/*<h3 style={{'border-bottom-color': props.mainColor}}>Let's Talk</h3>*/}
-                            <SubheaderH3 mainColor={props.mainColor} className={style.h3}>Let's Talk</SubheaderH3>
-                        </div>
+
+                        <PageSubTitle subTitle={'Let\'s Talk'} mainColor={props.mainColor}/>
 
 
                         <form id={style.contact_form}>

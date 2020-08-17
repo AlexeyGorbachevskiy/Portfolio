@@ -1,5 +1,5 @@
-
 @import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
 
 .project {
   display: grid;
@@ -21,18 +21,17 @@
 
   .tilt {
     grid-area: image;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+    @include flex();
 
     .project_img_wrapper {
       position: relative;
 
       height: 100%;
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+      @include flex();
 
       /*background-color: white;*/
       background-size: cover !important;
@@ -59,9 +58,8 @@
         min-width: 150px;
         padding: 0 10px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex();
+
         background-color: rgba(0, 0, 0, .6);
 
         visibility: hidden;
@@ -71,7 +69,7 @@
           /*background-color: #2C2D2F;*/
         }
 
-        &:hover {
+        &:active {
           /*background-color: #17181b;*/
           background-color: #2C2D2F;
         }
@@ -95,9 +93,9 @@
 
   .project_description {
     grid-area: text;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @include flex();
+
     /*background-color: #17181b;*/
     background-color: #2C2D2F;
 

@@ -8,6 +8,7 @@ import counter from '../../assets/img/projects/counter.png'
 import weather from '../../assets/img/projects/weather_informer.png'
 import tasks from '../../assets/img/projects/react_tasks.png'
 import styled from "styled-components";
+import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
 function Portfolio(props) {
 
@@ -62,23 +63,14 @@ function Portfolio(props) {
         )
     })
 
-    const SubheaderH3 = styled.div`
-        border-bottom:  2px solid ${props => props.mainColor};
-        
-        &::before, &::after {
-            background: ${props => props.mainColor};       
-        }
-    `
+
 
     return (
         <div className={style.portfolio_container}>
             <div className={style.content_container}>
                 <PageTitle mainColor={props.mainColor} title={'Portfolio'} icon={'lnr lnr-briefcase'}/>
 
-                <div className={style.subheader}>
-                    {/*<h3 style={{'border-bottom-color': props.mainColor}}>My Projects</h3>*/}
-                    <SubheaderH3 mainColor={props.mainColor} className={style.h3}>My Projects</SubheaderH3>
-                </div>
+                <PageSubTitle subTitle={'My Projects'} mainColor={props.mainColor}/>
 
                 <div className={style.main_wrapper}>
 

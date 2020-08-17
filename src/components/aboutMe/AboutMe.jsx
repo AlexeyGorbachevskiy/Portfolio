@@ -22,6 +22,7 @@ function AboutMe(props) {
                             libraries
                             and not only (see Resume page).
                             Also, I participated in development of different applications (see Portfolio page).
+                            More projects there: https://github.com/AlexeyGorbachevskiy.
                         </p>
                         <p>Thank you for visiting.</p>
                     </div>
@@ -51,7 +52,7 @@ function AboutMe(props) {
                             </li>
                             <li>
                                 <span style={{'border-bottom-color':props.mainColor}} className={style.title}>GitHub:</span>
-                                <span className={style.value}>AlexeyGorbachevskiy</span>
+                                <span className={style.value}>github.com/AlexeyGorbachevskiy</span>
                             </li>
                             <li>
                                 <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Phone:</span>
