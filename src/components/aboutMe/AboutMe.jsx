@@ -22,7 +22,10 @@ function AboutMe(props) {
                             libraries
                             and not only (see Resume page).
                             Also, I participated in development of different applications (see Portfolio page).
-                            More projects there: https://github.com/AlexeyGorbachevskiy.
+                            More projects there:
+                            <a style={{'color': props.mainColor, 'border-bottom-color': props.mainColor}}
+                               target={'_blank'}
+                               href="https://github.com/AlexeyGorbachevskiy"> https://github.com/AlexeyGorbachevskiy</a>
                         </p>
                         <p>Thank you for visiting.</p>
                     </div>
@@ -31,35 +34,43 @@ function AboutMe(props) {
                         <h3>Personal Information</h3>
                         <ul>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Name:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Name:</span>
                                 <span className={style.value}>Alexey Gorbachevskiy</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Age:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Age:</span>
                                 <span className={style.value}>23</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Residence:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Residence:</span>
                                 <span className={style.value}>Minsk, Belarus</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Address:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Address:</span>
                                 <span className={style.value}>Oops</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Email:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Email:</span>
                                 <span className={style.value}>alexeygorbachevskiyy@gmail.com</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>GitHub:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>GitHub:</span>
                                 <span className={style.value}>github.com/AlexeyGorbachevskiy</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Phone:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Phone:</span>
                                 <span className={style.value}>+375 (29) 636-17-79</span>
                             </li>
                             <li>
-                                <span style={{'border-bottom-color':props.mainColor}} className={style.title}>Job:</span>
+                                <span style={{'border-bottom-color': props.mainColor}}
+                                      className={style.title}>Job:</span>
                                 <span className={style.value}>Available</span>
                             </li>
                         </ul>

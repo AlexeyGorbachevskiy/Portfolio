@@ -65,6 +65,14 @@
         & > p {
           line-height: 1.65;
           margin-bottom: 1rem;
+          & a{
+            line-height: 1.65;
+            text-decoration: none;
+            color: $mainColor;
+            &:hover{
+              border-bottom: 1px solid $mainColor;
+            }
+          }
         }
       }
 
