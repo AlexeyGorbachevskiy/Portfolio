@@ -26,6 +26,7 @@
     "react-tilt": "^0.1.4",
     "react-transition-group": "^4.4.1",
     "react-typing-effect": "^2.0.3",
+    "redux-form": "^8.3.6",
     "styled-components": "^5.1.1"
   },
   "scripts": {
