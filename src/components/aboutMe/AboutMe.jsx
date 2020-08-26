@@ -66,7 +66,7 @@ function AboutMe(props) {
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}
                                       className={style.title}>Phone:</span>
-                                <span className={style.value}>+375 (29) 636-17-79</span>
+                                <span className={style.value}>Oops</span>
                             </li>
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}

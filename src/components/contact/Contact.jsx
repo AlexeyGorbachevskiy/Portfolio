@@ -8,9 +8,8 @@ import {requests} from "../../requests/requests";
 
 function Contact(props) {
 
-    const sendForm = async () => {
-        const result = await requests.sendMessage('Alex', 'some', 'Hello')
-        console.log(result)
+    const sendForm = () => {
+        requests.sendMessage('Alex', 'some', 'Hello')
     }
 
 
@@ -77,7 +76,7 @@ function Contact(props) {
                                 <span>
                                      <i style={{'color': props.mainColor}} className={'fa fa-phone'}/>
                                 </span>
-                                <h5>+375 (29) 636-17-79</h5>
+                                <h5>Oops</h5>
                             </div>
                         </div>
 
