@@ -2,12 +2,16 @@ import React from 'react';
 import style from './Contact.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Button from "@material-ui/core/Button";
-import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
+import {requests} from "../../requests/requests";
 
 
 function Contact(props) {
 
+    const sendForm = async () => {
+        const result = await requests.sendMessage('Alex', 'some', 'Hello')
+        console.log(result)
+    }
 
 
     return (
@@ -42,6 +46,7 @@ function Contact(props) {
 
 
                                 <Button
+                                    onClick={sendForm}
                                     id={style.send_btn}
                                     style={{'color': props.mainColor, 'border-color': props.mainColor}}
                                     type={'submit'}
