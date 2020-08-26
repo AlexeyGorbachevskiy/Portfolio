@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-export const requests = {
+export const api = {
     sendMessage(name, email, message) {
         const formData = {name, email, message}
         return (

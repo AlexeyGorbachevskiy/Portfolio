@@ -3,13 +3,14 @@ import style from './Contact.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Button from "@material-ui/core/Button";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
-import {requests} from "../../requests/requests";
+import {api} from "../../api/api";
 
 
 function Contact(props) {
 
-    const sendForm = () => {
-        requests.sendMessage('Alex', 'some', 'Hello')
+    const sendForm = (e) => {
+        e.preventDefault();
+        api.sendMessage('Alex', 'some', 'Hello')
     }
 
 
