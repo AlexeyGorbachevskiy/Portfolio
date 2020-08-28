@@ -57,31 +57,31 @@ function Nav(props) {
             <div className={style.nav_footer}>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a>
                             <i className="fa fa-facebook-square"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a>
                             <i className="fa fa-twitter-square"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a>
                             <i className="fa fa-youtube-square"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a>
                             <i className="fa fa-vk"/>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a>
                             <i className="fa fa-instagram"/>
                         </a>
                     </li>

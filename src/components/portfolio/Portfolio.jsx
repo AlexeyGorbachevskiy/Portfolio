@@ -27,7 +27,7 @@ function Portfolio(props) {
         },
         {
             imageStyle: todoListStyle,
-            description: 'Typescript, Hooks, Jest Tdd, Redux, StoryBook, Material UI ',
+            description: 'Typescript, Hooks, Jest Tdd, Redux, StoryBook, Material UI, Axios ',
             projectName: 'TodoList',
             link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
         },
