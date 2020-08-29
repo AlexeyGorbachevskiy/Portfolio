@@ -136,7 +136,7 @@ function Contact(props) {
                         <div className={style.contact_footer}>
                             <div className={style.link_wrapper}>
                                 <span><i style={{'color': props.mainColor}} className={'fa fa-paper-plane'}/></span>
-                                <h5>Alexey Gorbachevskiy</h5>
+                                <h5>@AlexeyGorbachevskiy</h5>
                             </div>
                             <div className={style.link_wrapper}>
                                 <span>
