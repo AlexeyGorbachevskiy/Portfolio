@@ -7,6 +7,7 @@ import todolist from '../../assets/img/projects/todolist.png'
 import counter from '../../assets/img/projects/counter.png'
 import weather from '../../assets/img/projects/weather_informer.png'
 import tasks from '../../assets/img/projects/react_tasks.png'
+import cards from '../../assets/img/projects/cards.png'
 import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
@@ -14,23 +15,31 @@ function Portfolio(props) {
 
     const chatterStyle = {background: `url(${chatter})`};
     const todoListStyle = {background: `url(${todolist})`};
+    const cardsStyle = {background: `url(${cards})`};
     const counterStyle = {background: `url(${counter})`};
     const weatherStyle = {background: `url(${weather})`};
     const tasksStyle = {background: `url(${tasks})`};
 
     const projects = [
         {
+            imageStyle: cardsStyle,
+            description: 'In progress',
+            projectName: 'Party Cards',
+            link: 'https://alexeygorbachevskiy.github.io/PartyCards/'
+        },
+        {
+            imageStyle: todoListStyle,
+            description: 'Typescript, Hooks, Jest (Tdd), Redux, StoryBook, Material UI, Axios ',
+            projectName: 'TodoList',
+            link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
+        },
+        {
             imageStyle: chatterStyle,
             description: 'Typescript, Hooks, Axios, Class/Func components, HOC(s), Redux-Form, React-Redux, Context API',
             projectName: 'Social Network',
             link: 'https://alexeygorbachevskiy.github.io/Chatter/'
         },
-        {
-            imageStyle: todoListStyle,
-            description: 'Typescript, Hooks, Jest Tdd, Redux, StoryBook, Material UI, Axios ',
-            projectName: 'TodoList',
-            link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
-        },
+
         {
             imageStyle: counterStyle,
             description: 'Typescript, Hooks, Function Components, CSS Modules',
@@ -62,7 +71,6 @@ function Portfolio(props) {
             />
         )
     })
-
 
 
     return (
