@@ -8,6 +8,8 @@ import counter from '../../assets/img/projects/counter.png'
 import weather from '../../assets/img/projects/weather_informer.png'
 import tasks from '../../assets/img/projects/react_tasks.png'
 import cards from '../../assets/img/projects/cards.png'
+import webdev from '../../assets/img/projects/webdev.png'
+import cartesian from '../../assets/img/projects/cartesian.png'
 import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
@@ -18,6 +20,8 @@ function Portfolio(props) {
     const cardsStyle = {background: `url(${cards})`};
     const counterStyle = {background: `url(${counter})`};
     const weatherStyle = {background: `url(${weather})`};
+    const webdevStyle = {background: `url(${webdev})`};
+    const cartesianStyle = {background: `url(${cartesian})`};
     const tasksStyle = {background: `url(${tasks})`};
 
     const projects = [
@@ -29,7 +33,7 @@ function Portfolio(props) {
         },
         {
             imageStyle: todoListStyle,
-            description: 'Typescript, Hooks, Jest (Tdd), Redux, StoryBook, Material UI, Axios ',
+            description: 'Typescript, Hooks, Jest (Tdd), Redux, Formik, StoryBook, Material UI, Axios ',
             projectName: 'TodoList',
             link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
         },
@@ -42,7 +46,7 @@ function Portfolio(props) {
 
         {
             imageStyle: counterStyle,
-            description: 'Typescript, Hooks, Function Components, CSS Modules',
+            description: 'Local Storage, Typescript, Hooks, Function Components, CSS Modules',
             projectName: 'Counter',
             link: 'https://alexeygorbachevskiy.github.io/Counter/'
         },
@@ -51,6 +55,18 @@ function Portfolio(props) {
             description: 'Javascript, Hooks, Fetch API, Function Components, CSS Modules',
             projectName: 'Weather Informer',
             link: 'https://alexeygorbachevskiy.github.io/Weather_Informer/'
+        },
+        {
+            imageStyle: webdevStyle,
+            description: 'Pixel Perfect, Figma. Tech task: https://github.com/AlexeyGorbachevskiy/webdev Layout for 1600px screen only.',
+            projectName: 'WebDev',
+            link: 'https://alexeygorbachevskiy-webdev.netlify.app/'
+        },
+        {
+            imageStyle: cartesianStyle,
+            description: 'JavaScript, Canvas, Local Storage',
+            projectName: 'Cartesian Coordinates',
+            link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
         },
         // {
         //     imageStyle: tasksStyle,

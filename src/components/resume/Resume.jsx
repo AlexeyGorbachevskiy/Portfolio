@@ -12,10 +12,10 @@ function Resume(props) {
         {
             icon: ['fab', 'js-square'],
             iconTitle: 'Javascript & Typescript',
-            iconText: 'Types, ES6, Scope, Promises, Event Loop'
+            iconText: 'Types, ES6, Scope, Closures, Promises, Event Loop'
         },
         {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC'},
-        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, CSS Modules, Sass/Scss.'},
+        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, Pixel Perfect, Figma, CSS Modules, Sass/Scss.'},
 
         {icon: ['fa', 'language'], iconTitle: 'English', iconText: 'Intermediate (B1) level'},
         {icon: ['fab', 'git-square'], iconTitle: 'GIT', iconText: 'Working Experience'},
