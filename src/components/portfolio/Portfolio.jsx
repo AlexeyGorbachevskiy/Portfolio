@@ -45,6 +45,13 @@ function Portfolio(props) {
         },
 
         {
+            imageStyle: cartesianStyle,
+            description: 'JavaScript,Webpack, Canvas, Local Storage',
+            projectName: 'Cartesian Coordinates',
+            link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
+        },
+
+        {
             imageStyle: counterStyle,
             description: 'Local Storage, Typescript, Hooks, Function Components, CSS Modules',
             projectName: 'Counter',
@@ -58,15 +65,9 @@ function Portfolio(props) {
         },
         {
             imageStyle: webdevStyle,
-            description: 'Pixel Perfect, Figma. Tech task: https://github.com/AlexeyGorbachevskiy/webdev Layout for 1600px screen only.',
+            description: 'Pixel Perfect, Figma. Layout for 1600px screen only. Task description: https://github.com/AlexeyGorbachevskiy/webdev',
             projectName: 'WebDev',
             link: 'https://alexeygorbachevskiy-webdev.netlify.app/'
-        },
-        {
-            imageStyle: cartesianStyle,
-            description: 'JavaScript, Canvas, Local Storage',
-            projectName: 'Cartesian Coordinates',
-            link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
         },
         // {
         //     imageStyle: tasksStyle,
