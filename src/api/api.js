@@ -7,6 +7,7 @@ export const api = {
         return (
             axios.post('https://gmail-portfolio-smtp.herokuapp.com/sendMessage', formData)
                 .then((res) => {
+                    console.log(res)
                     return res
                 })
                 .catch(err => console.log(err))

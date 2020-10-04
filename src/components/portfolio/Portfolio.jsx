@@ -10,6 +10,8 @@ import tasks from '../../assets/img/projects/react_tasks.png'
 import cards from '../../assets/img/projects/cards.png'
 import webdev from '../../assets/img/projects/webdev.png'
 import cartesian from '../../assets/img/projects/cartesian.png'
+import shelter from '../../assets/img/projects/shelter.png'
+import keyboard from '../../assets/img/projects/virtual-keyboard.png'
 import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
@@ -22,6 +24,8 @@ function Portfolio(props) {
     const weatherStyle = {background: `url(${weather})`};
     const webdevStyle = {background: `url(${webdev})`};
     const cartesianStyle = {background: `url(${cartesian})`};
+    const shelterStyle = {background: `url(${shelter})`};
+    const keyboardStyle = {background: `url(${keyboard})`};
     const tasksStyle = {background: `url(${tasks})`};
 
     const projects = [
@@ -49,6 +53,18 @@ function Portfolio(props) {
             description: 'JavaScript,Webpack, Canvas, Local Storage',
             projectName: 'Cartesian Coordinates',
             link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
+        },
+        {
+            imageStyle: shelterStyle,
+            description: 'Html/Css, Pixel Perfect, Figma',
+            projectName: 'Shelter',
+            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/shelter/pages/main/'
+        },
+        {
+            imageStyle: keyboardStyle,
+            description: 'Vanilla JavaScript, DOM, Responsive design, Easy to integrate',
+            projectName: 'Virtual Keyboard',
+            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/virtual-keyboard/'
         },
 
         {
