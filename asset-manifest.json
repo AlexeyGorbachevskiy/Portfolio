@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.73b07e72.chunk.css",
-    "main.js": "/Portfolio/static/js/main.3e1c18f1.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.3e1c18f1.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ba19040c.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ba19040c.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/css/2.c6f1d87e.chunk.css": "/Portfolio/static/css/2.c6f1d87e.chunk.css",
-    "static/js/2.2f9da04d.chunk.js": "/Portfolio/static/js/2.2f9da04d.chunk.js",
-    "static/js/2.2f9da04d.chunk.js.map": "/Portfolio/static/js/2.2f9da04d.chunk.js.map",
+    "static/js/2.99ef9ed1.chunk.js": "/Portfolio/static/js/2.99ef9ed1.chunk.js",
+    "static/js/2.99ef9ed1.chunk.js.map": "/Portfolio/static/js/2.99ef9ed1.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.2ad7b137c36451b80a033eb09647c8ab.js": "/Portfolio/precache-manifest.2ad7b137c36451b80a033eb09647c8ab.js",
+    "precache-manifest.c843994846c53776b71a334776765f8e.js": "/Portfolio/precache-manifest.c843994846c53776b71a334776765f8e.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.c6f1d87e.chunk.css.map": "/Portfolio/static/css/2.c6f1d87e.chunk.css.map",
     "static/css/main.73b07e72.chunk.css.map": "/Portfolio/static/css/main.73b07e72.chunk.css.map",
-    "static/js/2.2f9da04d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2f9da04d.chunk.js.LICENSE.txt",
+    "static/js/2.99ef9ed1.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.99ef9ed1.chunk.js.LICENSE.txt",
     "static/media/cards.png": "/Portfolio/static/media/cards.b304f754.png",
     "static/media/cartesian.png": "/Portfolio/static/media/cartesian.555e321f.png",
     "static/media/chatter.png": "/Portfolio/static/media/chatter.e3dd14c6.png",
@@ -21,15 +21,17 @@
     "static/media/font-awesome.min.css": "/Portfolio/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/react_tasks.png": "/Portfolio/static/media/react_tasks.f40cc862.png",
     "static/media/Main.module.scss": "/Portfolio/static/media/road.0f784d71.jpg",
+    "static/media/shelter.png": "/Portfolio/static/media/shelter.fec1ae1b.png",
     "static/media/todolist.png": "/Portfolio/static/media/todolist.0e8ba557.png",
+    "static/media/virtual-keyboard.png": "/Portfolio/static/media/virtual-keyboard.f06656fe.png",
     "static/media/weather_informer.png": "/Portfolio/static/media/weather_informer.0b7a2f72.png",
     "static/media/webdev.png": "/Portfolio/static/media/webdev.7dbe7ba7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/css/2.c6f1d87e.chunk.css",
-    "static/js/2.2f9da04d.chunk.js",
+    "static/js/2.99ef9ed1.chunk.js",
     "static/css/main.73b07e72.chunk.css",
-    "static/js/main.3e1c18f1.chunk.js"
+    "static/js/main.ba19040c.chunk.js"
   ]
 }
