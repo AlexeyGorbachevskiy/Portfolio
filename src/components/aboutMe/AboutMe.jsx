@@ -19,9 +19,9 @@ function AboutMe(props) {
                         </p>
                         <p>
                             I attended front-end courses of IT-incubator. There I studied predominantly React/Redux
-                            libraries
-                            and not only (see Resume page).
+                            libraries and not only (see Resume page).
                             Also, I participated in development of different applications (see Portfolio page).
+                            At the moment I am attending Javascript course from Epam (Rolling Scopes).
                             More projects there:
                             <a style={{'color': props.mainColor, 'border-bottom-color': props.mainColor}}
                                target={'_blank'}

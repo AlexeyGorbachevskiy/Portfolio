@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Portfolio.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Project from "./project/Project";
+import puzzle from '../../assets/img/projects/puzzle2.png'
 import chatter from '../../assets/img/projects/chatter.png'
 import todolist from '../../assets/img/projects/todolist.png'
 import counter from '../../assets/img/projects/counter.png'
@@ -17,9 +18,10 @@ import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
 function Portfolio(props) {
 
+    const puzzleStyle = {background: `url(${puzzle})`};
+    const cardsStyle = {background: `url(${cards})`};
     const chatterStyle = {background: `url(${chatter})`};
     const todoListStyle = {background: `url(${todolist})`};
-    const cardsStyle = {background: `url(${cards})`};
     const counterStyle = {background: `url(${counter})`};
     const weatherStyle = {background: `url(${weather})`};
     const webdevStyle = {background: `url(${webdev})`};
@@ -30,33 +32,39 @@ function Portfolio(props) {
 
     const projects = [
         {
+            imageStyle: puzzleStyle,
+            description: 'JavaScript, Scss,Webpack, Image splitting, Grid, Flex, Responsive & Adaptive, Drag&Drop, Move animation, DOM, Local Storage, Audio',
+            projectName: 'Gem Puzzle',
+            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/gem-puzzle/'
+        },
+        {
             imageStyle: cardsStyle,
-            description: 'In progress',
+            description: 'React, In progress',
             projectName: 'Party Cards',
             link: 'https://alexeygorbachevskiy.github.io/PartyCards/'
         },
         {
             imageStyle: todoListStyle,
-            description: 'Typescript, Hooks, Jest (Tdd), Redux, Formik, StoryBook, Material UI, Axios ',
+            description: 'React, Typescript, Hooks, Jest (Tdd), Redux, Formik, StoryBook, Material UI, Axios ',
             projectName: 'TodoList',
             link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
         },
         {
             imageStyle: chatterStyle,
-            description: 'Typescript, Hooks, Axios, Class/Func components, HOC(s), Redux-Form, React-Redux, Context API',
+            description: 'React, Typescript, Hooks, Axios, Class/Func components, HOC(s), Redux-Form, React-Redux, Context API',
             projectName: 'Social Network',
             link: 'https://alexeygorbachevskiy.github.io/Chatter/'
         },
 
         {
             imageStyle: cartesianStyle,
-            description: 'JavaScript,Webpack, Canvas, Local Storage',
+            description: 'JavaScript, Webpack, Canvas, Drag&Drop, Local Storage',
             projectName: 'Cartesian Coordinates',
             link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
         },
         {
             imageStyle: shelterStyle,
-            description: 'Html/Css, Pixel Perfect, Figma',
+            description: 'JavaScript, DOM, Html/Css, Adaptive & Responsive, Pixel Perfect, Figma',
             projectName: 'Shelter',
             link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/shelter/pages/main/'
         },
@@ -69,19 +77,19 @@ function Portfolio(props) {
 
         {
             imageStyle: counterStyle,
-            description: 'Local Storage, Typescript, Hooks, Function Components, CSS Modules',
+            description: 'React, Local Storage, Typescript, Hooks, Function Components, CSS Modules',
             projectName: 'Counter',
             link: 'https://alexeygorbachevskiy.github.io/Counter/'
         },
         {
             imageStyle: weatherStyle,
-            description: 'Javascript, Hooks, Fetch API, Function Components, CSS Modules',
+            description: 'React, Javascript, Hooks, Fetch API, Function Components, CSS Modules',
             projectName: 'Weather Informer',
             link: 'https://alexeygorbachevskiy.github.io/Weather_Informer/'
         },
         {
             imageStyle: webdevStyle,
-            description: 'Pixel Perfect, Figma. Layout for 1600px screen only. Task description: https://github.com/AlexeyGorbachevskiy/webdev',
+            description: 'Html/Css, Pixel Perfect, Figma, Layout for 1600px screen only',
             projectName: 'WebDev',
             link: 'https://alexeygorbachevskiy-webdev.netlify.app/'
         },
@@ -93,9 +101,10 @@ function Portfolio(props) {
         // },
     ];
 
-    const project = projects.map(projectsElement => {
+    const project = projects.map((projectsElement,index) => {
         return (
             <Project
+                key={index}
                 mainColor={props.mainColor}
                 imageStyle={projectsElement.imageStyle}
                 description={projectsElement.description}

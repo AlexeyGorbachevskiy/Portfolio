@@ -58,6 +58,8 @@
         min-width: 150px;
         padding: 0 10px;
 
+        text-align: center;
+
         @include flex();
 
         background-color: rgba(0, 0, 0, .6);
