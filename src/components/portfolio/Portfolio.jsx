@@ -2,17 +2,18 @@ import React from 'react';
 import style from './Portfolio.module.scss';
 import PageTitle from "../../common/pageTitle/PageTitle";
 import Project from "./project/Project";
-import puzzle from '../../assets/img/projects/puzzle2.png'
-import chatter from '../../assets/img/projects/chatter.png'
-import todolist from '../../assets/img/projects/todolist.png'
-import counter from '../../assets/img/projects/counter.png'
-import weather from '../../assets/img/projects/weather_informer.png'
-import tasks from '../../assets/img/projects/react_tasks.png'
-import cards from '../../assets/img/projects/cards.png'
-import webdev from '../../assets/img/projects/webdev.png'
-import cartesian from '../../assets/img/projects/cartesian.png'
-import shelter from '../../assets/img/projects/shelter.png'
-import keyboard from '../../assets/img/projects/virtual-keyboard.png'
+import puzzle from '../../assets/img/projects/puzzle2.png';
+import chatter from '../../assets/img/projects/chatter.png';
+import todolist from '../../assets/img/projects/todolist.png';
+import counter from '../../assets/img/projects/counter.png';
+import weather from '../../assets/img/projects/weather_informer.png';
+import tasks from '../../assets/img/projects/react_tasks.png';
+import cards from '../../assets/img/projects/cards.png';
+import webdev from '../../assets/img/projects/webdev.png';
+import cartesian from '../../assets/img/projects/cartesian.png';
+import shelter from '../../assets/img/projects/shelter.png';
+import keyboard from '../../assets/img/projects/virtual-keyboard.png';
+import momentum from '../../assets/img/projects/momentum2.png';
 import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
@@ -28,6 +29,7 @@ function Portfolio(props) {
     const cartesianStyle = {background: `url(${cartesian})`};
     const shelterStyle = {background: `url(${shelter})`};
     const keyboardStyle = {background: `url(${keyboard})`};
+    const momentumStyle = {background: `url(${momentum})`};
     const tasksStyle = {background: `url(${tasks})`};
 
     const projects = [
@@ -55,18 +57,24 @@ function Portfolio(props) {
             projectName: 'Social Network',
             link: 'https://alexeygorbachevskiy.github.io/Chatter/'
         },
+        {
+            imageStyle: shelterStyle,
+            description: 'JavaScript, DOM, Html/Css, Adaptive & Responsive, Pixel Perfect, Figma',
+            projectName: 'Shelter',
+            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/shelter/pages/main/'
+        },
+        {
+            imageStyle: momentumStyle,
+            description: 'Analogue of the Google Chrome extension with the same name. JavaScript, Fetch API, Local Storage, DOM, Html/Css, Adaptivity',
+            projectName: 'Momentum',
+            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/momentum/'
+        },
 
         {
             imageStyle: cartesianStyle,
             description: 'JavaScript, Webpack, Canvas, Drag&Drop, Local Storage',
             projectName: 'Cartesian Coordinates',
             link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
-        },
-        {
-            imageStyle: shelterStyle,
-            description: 'JavaScript, DOM, Html/Css, Adaptive & Responsive, Pixel Perfect, Figma',
-            projectName: 'Shelter',
-            link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/shelter/pages/main/'
         },
         {
             imageStyle: keyboardStyle,
