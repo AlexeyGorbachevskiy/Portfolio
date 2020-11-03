@@ -41,7 +41,7 @@ function Portfolio(props) {
         },
         {
             imageStyle: cardsStyle,
-            description: 'React, In progress',
+            description: 'In progress: React, TypeScript, Redux, Formik, Axios. For now: Authentication, Registration, Restore Password, Profile data changing are completed.',
             projectName: 'Party Cards',
             link: 'https://alexeygorbachevskiy.github.io/PartyCards/'
         },
