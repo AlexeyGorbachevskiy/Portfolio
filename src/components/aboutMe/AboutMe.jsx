@@ -12,16 +12,18 @@ function AboutMe(props) {
                     <div className={style.main_content}>
                         <h3>Frontend Developer</h3>
                         <p>
-                            Hello, my name is Alexey Gorbachevskiy. I graduated
-                            from Belarusian State University of Informatics and
-                            Radioelectronics.
-                            I am a Frontend Developer and I have expertise and skills in range of IT.
+                            Hello, my name is Alexey Gorbachevskiy. I am a Frontend Developer with one year experience into web development field
+                            with most of the React based solutions.
+                            I graduated from Belarusian State University of Informatics and
+                            Radioelectronics and I have expertise and skills in range of IT.
+
                         </p>
                         <p>
                             I attended front-end courses of IT-incubator. There I studied predominantly React/Redux
                             libraries and not only (see Resume page).
-                            Also, I participated in development of different applications (see Portfolio page).
-                            At the moment I am attending Javascript course from Epam (Rolling Scopes).
+                            I participated in development of different applications (see Portfolio page).
+                            Also I was attending Javascript course from Epam (Rolling Scopes).
+                            At the moment I am working as a freelancer.
                             More projects there:
                             <a style={{'color': props.mainColor, 'border-bottom-color': props.mainColor}}
                                target={'_blank'}
@@ -41,7 +43,7 @@ function AboutMe(props) {
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}
                                       className={style.title}>Age:</span>
-                                <span className={style.value}>23</span>
+                                <span className={style.value}>24</span>
                             </li>
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}

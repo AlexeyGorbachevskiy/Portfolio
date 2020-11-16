@@ -14,8 +14,8 @@ function Resume(props) {
             iconTitle: 'Javascript & Typescript',
             iconText: 'Types, ES6, Scope, Closures, DOM, Promises, Event Loop'
         },
-        {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC'},
-        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, Pixel Perfect, Figma, CSS Modules, Sass/Scss.'},
+        {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC, Axios, Formik'},
+        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, Pixel Perfect, Figma, CSS Modules, Sass/Scss, Ant Design'},
 
         {icon: ['fa', 'language'], iconTitle: 'English', iconText: 'Intermediate (B1) level'},
         {icon: ['fab', 'git-square'], iconTitle: 'GIT', iconText: 'Working Experience'},

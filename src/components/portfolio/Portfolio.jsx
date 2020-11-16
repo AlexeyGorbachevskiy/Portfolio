@@ -34,36 +34,43 @@ function Portfolio(props) {
 
     const projects = [
         {
+            id: 1,
+            imageStyle: cardsStyle,
+            description: 'React, TypeScript, Redux, Formik, Axios, Ant Design. Features: Authentication, Registration, Restore Password, ' +
+                'Profile data changing, Working with Tables (ajax): Pagination, Searching, Filtering, Sorting, Editing, Deleting, Creating',
+            projectName: 'Party Cards',
+            link: 'https://alexeygorbachevskiy.github.io/PartyCards/'
+        },
+        {
+            id: 2,
             imageStyle: puzzleStyle,
             description: 'JavaScript, Scss,Webpack, Image splitting, Grid, Flex, Responsive & Adaptive, Drag&Drop, Move animation, DOM, Local Storage, Audio',
             projectName: 'Gem Puzzle',
             link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/gem-puzzle/'
         },
         {
-            imageStyle: cardsStyle,
-            description: 'In progress: React, TypeScript, Redux, Formik, Axios. For now: Authentication, Registration, Restore Password, Profile data changing are completed.',
-            projectName: 'Party Cards',
-            link: 'https://alexeygorbachevskiy.github.io/PartyCards/'
-        },
-        {
+            id: 3,
             imageStyle: todoListStyle,
             description: 'React, Typescript, Hooks, Jest (Tdd), Redux, Formik, StoryBook, Material UI, Axios ',
             projectName: 'TodoList',
             link: 'https://alexeygorbachevskiy.github.io/ToDoList/'
         },
         {
+            id: 4,
             imageStyle: chatterStyle,
             description: 'React, Typescript, Hooks, Axios, Class/Func components, HOC(s), Redux-Form, React-Redux, Context API',
             projectName: 'Social Network',
             link: 'https://alexeygorbachevskiy.github.io/Chatter/'
         },
         {
+            id: 5,
             imageStyle: shelterStyle,
             description: 'JavaScript, DOM, Html/Css, Adaptive & Responsive, Pixel Perfect, Figma',
             projectName: 'Shelter',
             link: 'https://rolling-scopes-school.github.io/alexeygorbachevskiy-JS2020Q3/shelter/pages/main/'
         },
         {
+            id: 6,
             imageStyle: momentumStyle,
             description: 'Analogue of the Google Chrome extension with the same name. JavaScript, Fetch API, Local Storage, DOM, Html/Css, Adaptivity',
             projectName: 'Momentum',
@@ -71,12 +78,14 @@ function Portfolio(props) {
         },
 
         {
+            id: 7,
             imageStyle: cartesianStyle,
             description: 'JavaScript, Webpack, Canvas, Drag&Drop, Local Storage',
             projectName: 'Cartesian Coordinates',
             link: 'https://alexeygorbachevskiy.github.io/cartesian-coordinates/'
         },
         {
+            id: 8,
             imageStyle: keyboardStyle,
             description: 'Vanilla JavaScript, DOM, Responsive design, Easy to integrate',
             projectName: 'Virtual Keyboard',
@@ -84,18 +93,21 @@ function Portfolio(props) {
         },
 
         {
+            id: 9,
             imageStyle: counterStyle,
             description: 'React, Local Storage, Typescript, Hooks, Function Components, CSS Modules',
             projectName: 'Counter',
             link: 'https://alexeygorbachevskiy.github.io/Counter/'
         },
         {
+            id: 10,
             imageStyle: weatherStyle,
             description: 'React, Javascript, Hooks, Fetch API, Function Components, CSS Modules',
             projectName: 'Weather Informer',
             link: 'https://alexeygorbachevskiy.github.io/Weather_Informer/'
         },
         {
+            id: 11,
             imageStyle: webdevStyle,
             description: 'Html/Css, Pixel Perfect, Figma, Layout for 1600px screen only',
             projectName: 'WebDev',
@@ -109,10 +121,11 @@ function Portfolio(props) {
         // },
     ];
 
-    const project = projects.map((projectsElement,index) => {
+    const project = projects.map((projectsElement, index) => {
         return (
             <Project
                 key={index}
+                id={projectsElement.id}
                 mainColor={props.mainColor}
                 imageStyle={projectsElement.imageStyle}
                 description={projectsElement.description}

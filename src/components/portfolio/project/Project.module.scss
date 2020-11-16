@@ -95,6 +95,7 @@
 
   .project_description {
     grid-area: text;
+    padding: 5px;
 
     @include flex();
 
