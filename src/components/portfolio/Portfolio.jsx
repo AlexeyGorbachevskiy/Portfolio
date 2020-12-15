@@ -14,11 +14,12 @@ import cartesian from '../../assets/img/projects/cartesian.png';
 import shelter from '../../assets/img/projects/shelter.png';
 import keyboard from '../../assets/img/projects/virtual-keyboard.png';
 import momentum from '../../assets/img/projects/momentum2.png';
+import chess from '../../assets/img/projects/chess.png';
 import styled from "styled-components";
 import PageSubTitle from "../../common/pageSubTitle/PageSubTitle";
 
 function Portfolio(props) {
-
+    const chessStyle = {background: `url(${chess})`};
     const puzzleStyle = {background: `url(${puzzle})`};
     const cardsStyle = {background: `url(${cards})`};
     const chatterStyle = {background: `url(${chatter})`};
@@ -33,6 +34,13 @@ function Portfolio(props) {
     const tasksStyle = {background: `url(${tasks})`};
 
     const projects = [
+        {
+            id: 0,
+            imageStyle: chessStyle,
+            description: 'WebSocket, React, Ruby on Rails, PostgreSQL, TypeScript, Redux, Axios',
+            projectName: 'Chess Network',
+            link: 'https://chess-network.netlify.app/'
+        },
         {
             id: 1,
             imageStyle: cardsStyle,

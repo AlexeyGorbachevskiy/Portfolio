@@ -12,7 +12,7 @@ function Resume(props) {
         {
             icon: ['fab', 'js-square'],
             iconTitle: 'Javascript & Typescript',
-            iconText: 'Types, ES6, Scope, Closures, DOM, Promises, Event Loop'
+            iconText: 'WebSocket, Types, ES6, Scope, Closures, DOM, Promises, Event Loop'
         },
         {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC, Axios, Formik'},
         {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, Pixel Perfect, Figma, CSS Modules, Sass/Scss, Ant Design'},

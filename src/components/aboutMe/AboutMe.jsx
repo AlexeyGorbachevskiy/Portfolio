@@ -19,11 +19,10 @@ function AboutMe(props) {
 
                         </p>
                         <p>
-                            I attended front-end courses of IT-incubator. There I studied predominantly React/Redux
-                            libraries and not only (see Resume page).
+                            I attended front-end courses of IT-incubator and Rolling Scopes (Epam). There I studied predominantly Javascript and React/Redux
+                            libraries (see Resume page).
                             I participated in development of different applications (see Portfolio page).
-                            Also I was attending Javascript course from Epam (Rolling Scopes).
-                            At the moment I am working as a freelancer.
+                            At the moment I am working as a Frontend Developer.
                             More projects there:
                             <a style={{'color': props.mainColor, 'border-bottom-color': props.mainColor}}
                                target={'_blank'}
@@ -68,12 +67,12 @@ function AboutMe(props) {
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}
                                       className={style.title}>Phone:</span>
-                                <span className={style.value}>Temporally Unavailable</span>
+                                <span className={style.value}>Unavailable</span>
                             </li>
                             <li>
                                 <span style={{'border-bottom-color': props.mainColor}}
                                       className={style.title}>Job:</span>
-                                <span className={style.value}>Available</span>
+                                <span className={style.value}>Unavailable</span>
                             </li>
                         </ul>
                     </div>
