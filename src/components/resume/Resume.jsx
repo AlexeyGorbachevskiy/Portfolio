@@ -12,13 +12,13 @@ function Resume(props) {
         {
             icon: ['fab', 'js-square'],
             iconTitle: 'Javascript & Typescript',
-            iconText: 'WebSocket, Types, ES6, Scope, Closures, DOM, Promises, Event Loop'
+            iconText: 'WebSocket, ES6, Asynchronous js, DOM, Patterns, Decorators, Promises, Event Loop'
         },
-        {icon: ['fab', 'react'], iconTitle: 'React & Redux', iconText: 'Hooks, Context API, React-Redux, Thunks, HOC, Axios, Formik'},
-        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'FlexBox, Grid, BEM, Pixel Perfect, Figma, CSS Modules, Sass/Scss, Ant Design'},
+        {icon: ['fab', 'react'], iconTitle: 'React & Etc', iconText: 'Redux, Effector, Hooks, Class components, Context API, Thunks, HOC, Axios, Final-Form, Formik'},
+        {icon: ['fa', 'code'], iconTitle: 'HTML & CSS', iconText: 'Styled Components, CSS Modules, Sass/Scss, Ant Design, BEM, Pixel Perfect, Figma'},
 
         {icon: ['fa', 'language'], iconTitle: 'English', iconText: 'Intermediate (B1) level'},
-        {icon: ['fab', 'git-square'], iconTitle: 'GIT', iconText: 'Working Experience'},
+        {icon: ['fab', 'git-square'], iconTitle: 'GIT', iconText: 'Resolve conflicts, Merging, Squashing and etc.'},
         {icon: ['fab', 'quora'], iconTitle: 'Quality Assurance', iconText: 'ISTQB Certified Tester 2020'},
 
     ]

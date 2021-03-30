@@ -41,15 +41,20 @@ function Contact(props) {
             setError(false)
         }
 
-
+        // two conditions for gmail
+        // 1 - enable less secure apps  https://www.google.com/settings/security/lesssecureapps
+        // 2 - approve https://accounts.google.com/b/0/DisplayUnlockCaptcha
         api.sendMessage(name, email, message)
             .then((res) => {
-                clearAllFields()
-                setResponse(res.data)
-                setSuccessfulMessage(true)
-                setTimeout(() => {
-                    setSuccessfulMessage(false)
-                }, 2000)
+                clearAllFields();
+                if(res){
+                    setResponse(res.data)
+                    setSuccessfulMessage(true)
+                    setTimeout(() => {
+                        setSuccessfulMessage(false)
+                    }, 2000)
+                }
+
             })
 
     }

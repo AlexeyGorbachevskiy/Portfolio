@@ -19,10 +19,10 @@ function AboutMe(props) {
 
                         </p>
                         <p>
-                            I attended front-end courses of IT-incubator and Rolling Scopes (Epam). There I studied predominantly Javascript and React/Redux
-                            libraries (see Resume page).
-                            I participated in development of different applications (see Portfolio page).
-                            At the moment I am working as a Frontend Developer.
+                            At the moment I am working as a Frontend Developer in the company.
+                            Previously I worked as a Frontend Developer on freelance for a year and before that
+                            I attended front-end courses in IT-incubator and Rolling Scopes (Epam).
+                            You can see my pet projects on Portfolio page.
                             More projects there:
                             <a style={{'color': props.mainColor, 'border-bottom-color': props.mainColor}}
                                target={'_blank'}

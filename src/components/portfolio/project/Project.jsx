@@ -33,7 +33,7 @@ function Project(props) {
 
 
             <div className={style.project_description}>
-                {props.id===1 && <><br/> <br/></>}
+                {/*{props.id===10 && <><br/> <br/></>}*/}
                 {props.description}
             </div>
         </div>
